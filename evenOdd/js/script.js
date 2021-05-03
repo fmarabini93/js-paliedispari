@@ -8,13 +8,16 @@ function isEven (num) {
 var userNum;
 do {
       userNum = parseInt(prompt("Please type a number between 1 and 5 (included)"));
-} while (userNum < 1 || userNum > 5)
+} while (isNaN(userNum) == true || userNum < 1 || userNum > 5)
 
 var pcNum = rndNum(1, 5);
 var sum = userNum + pcNum;
+var result;
 
 if (isEven(sum) == true) {
-      console.log("Even!");
+      result = "EVEN";
 } else {
-      console.log("Odd!");
+      result = "ODD";
 }
+
+document.getElementById("result").innerHTML = "Your number is " + userNum + " , PC number is " + pcNum + " , so the sum is " + sum + " and the result is " + result;
