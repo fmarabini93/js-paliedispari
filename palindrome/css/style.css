@@ -7,10 +7,18 @@
 body {
       height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: space-around;
       align-items: center;
-      font-family: 'Montserrat Alternates', sans-serif;
-      font-size: 40px;
       color: #500399;
       background-image: linear-gradient(to top right, #CDAFC0, #A3F9D4, #F6FBBC);
+}
+
+p {
+      font-family: 'Monoton', cursive;
+      font-size: 70px;
+}
+span {
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-size: 40px;
 }
