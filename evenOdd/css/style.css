@@ -19,7 +19,8 @@ body {
 }
 
 #response {
-      font-family: 'Freckle Face', cursive;
+      font-family: 'Gloria Hallelujah', cursive;
       text-transform: uppercase;
+      font-weight: bold;
       font-size: 100px;
 }
