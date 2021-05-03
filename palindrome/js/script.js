@@ -10,6 +10,9 @@ function palindrome(choosenWord) {
       }
 }
 
+var result = document.getElementById("pal-word");
 if (palindrome(word) == true) {
-      console.log("palindrome");
+      result.innerHTML = ("You typed " + "<strong>" + word + "</strong>" + ", which is a palindrome");
+} else {
+      result.innerHTML = ("You typed " + "<strong>" + word + "</strong>" + ", which is not a palindrome");
 }
