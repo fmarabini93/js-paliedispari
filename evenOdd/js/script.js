@@ -26,9 +26,10 @@ if (isEven(sum) == true) {
       result = "odd";
 }
 if (choice === result) {
-      response = "You won!";
+      response = "You won !";
 } else {
-      response = "You lost!";
+      response = "You lost !";
 }
 
-document.getElementById("result").innerHTML = "Your number is " + userNum + " , PC number is " + pcNum + " , so the sum is " + sum + " and the result is " + result + ". " + response;
+document.getElementById("result").innerHTML = "Your number is " + userNum + " , PC number is " + pcNum + " , so the sum is " + sum + " and the result is " + result + " .";
+document.getElementById("response").innerHTML = response;
